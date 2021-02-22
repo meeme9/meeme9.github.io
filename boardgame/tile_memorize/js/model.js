@@ -4,7 +4,7 @@ var model_info = [
     5, 7, 7, 7, 8, 8,
     9, 9, 9, 10, 10, 10,
     10, 10, 11, 11, 11, 12,
-    12, 12, 13, 13, 13, 14,
+    12, 12, 13, 13, 13, 
     14, 14, 14, 15, 15, 15,
     15, 15, 15, 15, 15, 16,
     16, 16, 16, 16, 16, 16,
@@ -139,7 +139,7 @@ document.getElementById("last").addEventListener('click', function (event) {
         item = document.createElement('div');
         item.className = 'item';
         item.style.backgroundPositionY = -id * 48 + 'px';
-        item.innerHTML = data[id];
+        //item.innerHTML = data[id];
 
         let item2 = document.createElement('input');
         item2.type="radio"

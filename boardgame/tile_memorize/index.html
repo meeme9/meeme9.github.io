@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>tile memorize</title>
+    <title>卡卡颂背牌助手</title>
     <link rel="stylesheet" href="css/popup.css">
 </head>
 
@@ -12,23 +12,23 @@
     <button id="reset" onclick="location.reload()">重置</button>
     <div id="step1" class="step">
         <div class="custom-select">
-            <div>选项1: 背牌模式</div>
+            <div>选项1: 选择本次练习的背牌模式</div>
             <select id='option_mode'>
-                <option value="0">只出选择的板块</option>
-                <option value="1">随机出所有板块</option>
+                <option value="0">打乱输出下面选择的板块</option>
+                <option value="1">打乱输出所有的板块</option>
             </select>
         </div>
         <div class="custom-select">
-            <div>选项2: 快速选牌</div>
+            <div>选项2: 快速选择本次练习要记忆的牌</div>
             <select id='tile_select' onchange="quick_seletion()">
-                <option value="0">手动选</option>
+                <option value="0">手动在下面勾选</option>
                 <option value="1">全选</option>
                 <option value="2">所有半圆</option>
                 <option value="3">所有道路</option>
             </select>
         </div>
         <div class="step">
-            <div>选项3: 手动选牌</div>
+            <div>选项3: 手动选择本次练习需要记忆的牌，选好后点击“启动”按钮</div>
             <div class="box">
             </div>
         </div>
@@ -37,6 +37,7 @@
         </div>
     </div>
     <div id="step2" class="step">
+		<div>点击“下一张”按钮，直至所有本次练习需要记忆的牌只剩下一张时。点击“只剩最后一张”按钮。回答问题</div>
         <div class="box" id="step2_box">
         </div>
         <div class="step">
@@ -47,7 +48,7 @@
         </div>
     </div>
     <div id="step3" class="step">
-        <div>选择最后这张牌是什么:</div>
+        <div>最后一张未出的牌是下面哪张？</div>
         <div class="box" id="step3_box">
         </div>
         <div class="step">

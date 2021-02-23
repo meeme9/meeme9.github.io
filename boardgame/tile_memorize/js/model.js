@@ -154,8 +154,9 @@ document.getElementById("last").addEventListener('click', function (event) {
     }
     document.getElementById("next").disabled = true
     document.getElementById("last").disabled = true
-
+    document.getElementById('step2_button').style.display = 'none'
     document.getElementById('step3').style.display = 'block'
+    
 });
 
 

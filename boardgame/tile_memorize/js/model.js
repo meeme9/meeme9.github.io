@@ -156,7 +156,7 @@ document.getElementById("last").addEventListener('click', function (event) {
     document.getElementById("last").disabled = true
     document.getElementById('step2_button').style.display = 'none'
     document.getElementById('step3').style.display = 'block'
-    
+    window.scrollTo(0,document.body.scrollHeight);
 });
 
 

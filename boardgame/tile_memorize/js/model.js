@@ -121,6 +121,8 @@ document.getElementById("next").addEventListener('click', function (event) {
         selected_tiles.splice(index2, 1);
     }
 
+    window.scrollTo(0,document.body.scrollHeight);
+
     if(index == all_tiles.length) {
         alert('done')
     }
@@ -194,6 +196,7 @@ function show_left() {
     }
     document.getElementById("next").disabled = true
     document.getElementById("last").disabled = true
+    window.scrollTo(0,document.body.scrollHeight);
 }
 
 function shuffle_array(array) {

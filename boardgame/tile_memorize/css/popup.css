@@ -3,6 +3,7 @@
 }
 
 .step {
+    width:320px;
     clear: both;
     list-style: none;
 }
@@ -47,7 +48,7 @@
 }
 
 button {
-    width: 320px;
+    width: 150px;
     margin: 0;
     border: none;
     border-top: solid 1px #f90;
@@ -60,7 +61,14 @@ button {
     transition: ease .4s;
 }
 
+.below {
+    clear: both;
+    list-style: none;
+    position: fixed;
+    bottom: 10px;
+}
+
 button:hover {
-    width: 320px;
+    width: 150px;
     margin: 0;
 }

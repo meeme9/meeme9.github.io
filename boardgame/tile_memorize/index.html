@@ -12,14 +12,7 @@
     <button id="reset" onclick="location.reload()">重置</button>
     <div id="step1" class="step">
         <div class="custom-select">
-            <div>选项1: 选择本次练习的背牌模式</div>
-            <select id='option_mode'>
-                <option value="0">打乱输出下面选择的板块</option>
-                <option value="1">打乱输出所有的板块</option>
-            </select>
-        </div>
-        <div class="custom-select">
-            <div>选项2: 快速选择本次练习要记忆的牌</div>
+            <div>选项1: 快速选择本次练习要记忆的牌，或在下面手动勾选, 选好后点击“启动”按钮</div>
             <select id='tile_select' onchange="quick_seletion()">
                 <option value="0">手动在下面勾选</option>
                 <option value="1">全选</option>
@@ -28,11 +21,18 @@
             </select>
         </div>
         <div class="step">
-            <div>选项3: 手动选择本次练习需要记忆的牌，选好后点击“启动”按钮</div>
             <div class="box">
             </div>
         </div>
         <div class="step">
+            <div>选项2: 选择本次练习的背牌模式</div>
+            <select id='option_mode'>
+                <option value="0">打乱输出下面选择的板块</option>
+                <option value="1">打乱输出所有的板块</option>
+            </select>
+        </div>
+        <div class="step">
+            <p></p>
             <button id="start">启动</button>
         </div>
     </div>
@@ -40,10 +40,9 @@
 		<div>点击“下一张”按钮，直至所有本次练习需要记忆的牌只剩下一张时。点击“只剩最后一张”按钮。回答问题</div>
         <div class="box" id="step2_box">
         </div>
-        <div class="step">
+        <div class="step"></div>
+        <div class="below">
             <button id="next">下一张</button>
-        </div>
-        <div class="step">
             <button id="last">只剩最后一张</button>
         </div>
     </div>
